@@ -1,8 +1,10 @@
 
 
 ---
+ # Greetings App
+[Live](https://fullstack-task-xi.vercel.app/)
 
-# Greetings App
+![image](https://github.com/user-attachments/assets/af4fcfcf-f6bb-4431-aba3-ad3769ac7d08)
 
 ## Overview
 
