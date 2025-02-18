@@ -21,7 +21,7 @@ This project is a full-stack web application with a **Node.js backend** and a **
    ```sh
    cd backend
    npm install
-   npm start
+   npm run start
    ```
 
 2. **Frontend Setup**
