@@ -37,12 +37,12 @@ This project is a full-stack web application with a **Node.js backend** and a **
 
 1. Build and start the application:
    ```sh
-   docker-compose up --build
+   docker compose up --build
    ```
 
 2. Stop the application:
    ```sh
-   docker-compose down
+   docker compose down
    ```
 
 ## Tech Stack
