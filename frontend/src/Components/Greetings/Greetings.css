@@ -1,0 +1,157 @@
+.greetings-container {
+    max-width: 600px;
+    margin: 4rem auto;
+    width: 90%;
+    margin-top: 10rem;
+    padding: 3rem;
+    
+    text-align: center;
+    position: relative;
+
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    background: #333333;
+    border: 2px solid #444444;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #888888;
+}
+
+input:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.3);
+}
+
+input.error {
+    border-color: #dc3545;
+}
+
+button {
+    width: 50%;
+    padding: 1rem;
+    background-color: #11cc00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 1rem;
+}
+
+button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    background-color: #00b300;
+    box-shadow: 0 4px 12px rgba(0, 204, 17, 0.3);
+}
+
+button:disabled {
+    background-color: #444444;
+    cursor: not-allowed;
+}
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.error-message {
+    color: #ff4444;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+.greeting-message {
+    color: #4CAF50;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    animation: slideUpFade 0.5s ease-out forwards;
+}
+
+.loading-spinner {
+    display: inline-block;
+    position: relative;
+    width: 1em;
+    height: 1em;
+}
+
+
+/* Mobile Breakpoints */
+@media screen and (max-width: 480px) {
+    body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .greetings-container {
+        margin: 0;
+        position: relative;
+        width: 85%;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    input, button {
+        padding: 0.7rem;
+    }
+
+    .error-message, .greeting-message {
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .greetings-container {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input, button {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+}
